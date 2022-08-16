@@ -33,7 +33,6 @@ fn main() {
     println!("{} and {} are okay",r1,r2);
 
     let r3 = &mut s;
-    printk
 }
 
 fn calculate_length(s: &String) -> usize{

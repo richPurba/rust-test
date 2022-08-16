@@ -20,7 +20,7 @@ fn main() {
     // println!("now can we see b {}",b); // runtime error: value b borrowed after moved.
                                         // b has been used in passing_string() and after {}, it goes
                                         // out of scope and thus this line is runtime error
-    let c = 32; // i32 is Copy (a trait!), whereas String is not.
+    let c = 32; // i32 has Copy (a trait!), whereas String is not.
     passing_integer(c);
     println!("can we see c {}",c); // c is still being called from the stack.
 
